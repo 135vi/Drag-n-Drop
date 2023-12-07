@@ -1,0 +1,58 @@
+.robots {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: cadetblue;
+    padding: 80px;
+    min-height: 100vh;
+    gap: 30px;
+}
+
+.robots-filter {
+    height: 20px;
+}
+
+.robot {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 200px;
+    height: 250px;
+    padding: 10px;
+    background-color: aquamarine;
+    transition: all 0.3s ease;
+    border-radius: 15px;
+    box-shadow: 0 0 7px 7px rgba(0,0,0,0.1);
+    color: rgb(34, 74, 75);
+    &:hover {
+        transition: all 0.3s ease;
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+}
+
+.robot__avatar {
+    display: block;
+    max-width: 80%;
+}
+
+.robot-card {
+    position: fixed;
+    padding: 10px;
+    width: 300px;
+    height: 400px;
+    z-index: 9990;
+    background: linear-gradient(#17c2e9, #36ce4c);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 15px rgba(0, 0, 0, 0.1);
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
